@@ -37,17 +37,19 @@
 </script>
     
           
-<div id="observablehq-rend-eb1d8337" ></div>
+<div id="observablehq-rendering-a980df5b" style="display:none"></div>
+<div id="observablehq-rend-a980df5b"></div>
+<p>Credit: <a href="https://observablehq.com/@anaglyph-ic/lathe-extrude@754">Pot by Anaglyphic</a></p>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@anaglyph-ic/lathe-extrude@latest.js?v=3";
+import define from "https://api.observablehq.com/@anaglyph-ic/lathe-extrude@754.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "rend") return new Inspector(document.querySelector("#observablehq-rend-eb1d8337"));
+  if (name === "rendering") return new Inspector(document.querySelector("#observablehq-rendering-a980df5b"));
+  if (name === "rend") return new Inspector(document.querySelector("#observablehq-rend-a980df5b"));
   return ["image"].includes(name);
 });
-  
 </script>
     
     <script src="./p5/p5.js"></script>
