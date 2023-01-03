@@ -28,8 +28,27 @@
   function fxpreview() {
     console.log("fxhash: TRIGGER PREVIEW")
   }
+      
+      
+      
   //---- /do not edit the following code
+
+      
 </script>
+    
+          
+<div id="observablehq-rend-eb1d8337" style="display:none"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/@anaglyph-ic/lathe-extrude@751.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "rend") return new Inspector(document.querySelector("#observablehq-rend-eb1d8337"));
+  return ["image"].includes(name);
+});
+</script>
+    
     <script src="./p5/p5.js"></script>
   </head>
   <body style="margin: 0px; overflow: hidden; background-color: black; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 100vh; align-items: center; justify-items: center;">
