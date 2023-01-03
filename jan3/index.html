@@ -28,13 +28,34 @@
   function fxpreview() {
     console.log("fxhash: TRIGGER PREVIEW")
   }
+      
+      
+      
   //---- /do not edit the following code
+
+      
 </script>
+    
+          
+<div id="observablehq-rendering-a980df5b" style="display:none"></div>
+<div id="observablehq-rend-a980df5b"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/@anaglyph-ic/lathe-extrude@latest.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "rendering") return new Inspector(document.querySelector("#observablehq-rendering-a980df5b"));
+  if (name === "rend") return new Inspector(document.querySelector("#observablehq-rend-a980df5b"));
+  return ["image"].includes(name);
+});
+</script>
+    
     <script src="./p5/p5.js"></script>
   </head>
   <body style="margin: 0px; overflow: hidden; background-color: black; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 100vh; align-items: center; justify-items: center;">
-    <main>
-      <script src="lathe-extrude/index.js"></script>
+    <main   style="z-index: 999;position: absolute;mix-blend-mode: multiply;">
+   
       <script src="index.js"></script>
       <div id="log" style="text-align: center; position: absolute; top: 0px; left 0px; font-size: 30px; color: #fff; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;"></div>
     </main>
