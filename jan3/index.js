@@ -1,5 +1,3 @@
-// Entropy-Locked Recursive Glitch Textures
-
 /*
 
 Genuary 2023
