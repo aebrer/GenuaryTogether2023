@@ -71,7 +71,7 @@ let noaa;
 let nostroke;
 
 function preload() {
-  tex = loadImage(window.sourcePotImage);
+  //tex = loadImage(window.sourcePotImage);
 }
 
 function setup() {
@@ -141,7 +141,7 @@ function setup() {
   loop();
 
   background("white")
-  image(tex, 0, 0, ww, wh, 0, 0, tex.width, tex.height);
+  //image(tex, 0, 0, ww, wh, 0, 0, tex.width, tex.height);
 
 }
 
