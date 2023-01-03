@@ -47,6 +47,10 @@ new Runtime().module(define, name => {
   if (name === "rend") return new Inspector(document.querySelector("#observablehq-rend-eb1d8337"));
   return ["image"].includes(name);
 });
+  
+const img = new Image();
+      img.src = document.getElementById("observablehq-rend-eb1d8337").children[0].toDataURL();
+  window.sourcePotImage=img;
 </script>
     
     <script src="./p5/p5.js"></script>
