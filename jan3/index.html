@@ -37,12 +37,12 @@
 </script>
     
           
-<div id="observablehq-rend-eb1d8337" style="display:none"></div>
+<div id="observablehq-rend-eb1d8337" ></div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@anaglyph-ic/lathe-extrude@751.js?v=3";
+import define from "https://api.observablehq.com/@anaglyph-ic/lathe-extrude@latest.js?v=3";
 new Runtime().module(define, name => {
   if (name === "rend") return new Inspector(document.querySelector("#observablehq-rend-eb1d8337"));
   return ["image"].includes(name);
