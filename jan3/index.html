@@ -48,16 +48,13 @@ new Runtime().module(define, name => {
   return ["image"].includes(name);
 });
   
-const img = new Image();
-      img.src = document.getElementById("observablehq-rend-eb1d8337").children[0].toDataURL();
-  window.sourcePotImage=img;
 </script>
     
     <script src="./p5/p5.js"></script>
   </head>
   <body style="margin: 0px; overflow: hidden; background-color: black; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 100vh; align-items: center; justify-items: center;">
     <main>
-      <script src="lathe-extrude/index.js"></script>
+   
       <script src="index.js"></script>
       <div id="log" style="text-align: center; position: absolute; top: 0px; left 0px; font-size: 30px; color: #fff; text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;"></div>
     </main>
