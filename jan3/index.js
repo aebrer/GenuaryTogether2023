@@ -71,7 +71,7 @@ let noaa;
 let nostroke;
 
 function preload() {
-  tex = loadImage('pot.png');
+  tex = loadImage(window.sourcePotImage);
 }
 
 function setup() {
