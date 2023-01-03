@@ -164,7 +164,7 @@ function draw() {
       if (recursive_shred){
         for (let i=0;i<splay_n;i++) {
           x=random_int(ww/2-200,ww/2+200)
-          y=random_int(wh/12,wh/3)
+          y=random_int(wh/6,wh/3)
           
           if (is_mobile) {
             // compatibility mode
@@ -180,12 +180,12 @@ function draw() {
       if (vert_tear) {
         // // // water vfx
         for (let i=0;i<water_n;i++) {
-          x=random_int(ww/2-100,ww/2+100)
+          x=random_int(ww/2-50,ww/2+50)
 
           if (is_mobile) {
-            blend(x, wh/2-400, Math.ceil(max(ww/1024,dd)), random_int(200,400), x, random_int(-5,5), Math.ceil(max(ww/1024,dd)), wh, DIFFERENCE)
+            blend(x, wh/2-390, Math.ceil(max(ww/1024,dd)), random_int(0,400), x, random_int(-5,5), Math.ceil(max(ww/1024,dd)), wh, DIFFERENCE)
           } else {
-            image(mycan, x, wh/2-400, max(ww/1024,dd), random_int(200,400), x, random_int(-5,5), max(ww/1024,dd), wh)
+            image(mycan, x, wh/2-390, max(ww/1024,dd), random_int(0,400), x, random_int(-5,5), max(ww/1024,dd), wh)
           }
         }
       }
